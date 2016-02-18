@@ -6,27 +6,39 @@
 //Create a QuizUser constructor that accepts name, email, password, and totalScore parameters and set them appropriatly
 
   //code here
-
+function QuizUzer(name, email, password, totalScore) {
+	this.name = name;
+	this.email = email;
+	this.password = password;
+	this.totalScore = totalScore;
+};
 
 //Create a Question constructor that accepts title, answersArray, rightAnswer, and difficulty parameters
 
   //code here
-
+function Question(title, answersArray, rightAnswer, difficulty) {
+	this.title = title;
+	this.answersArray = answersArray;
+	this.rightAnswer = rightAnswer;
+	this.difficulty = difficulty;
+};
 
 //Create a quizUsers Array which is going to hold all of our users.
 
   //code here
-
+var quizUsers = [];
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
   //code here
-
+var tyler = new User('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS');
+var cahlan = new User('Cahlan', 'cahlan@devmounta.in', 'iLoveHashtags');
+var lenny = new User('Lenny', 'lenny@theLenster.com', 'iLoveLentilSoup');
 
 //Create a questions Array which is going to hold all of our questions
 
   //code here
-
+var questions = [];
 
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
 //title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?'
